@@ -1,3 +1,4 @@
+require 'pry'
 class Owner
 
 @@owners = []
@@ -53,6 +54,7 @@ end
 
 def sell_pets
   self.pets.each {|type, pets| pets.empty? }
+  
 end
 
 def list_pets
