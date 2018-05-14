@@ -51,7 +51,9 @@ def feed_fish
   self.pets[:fishes].each {|fish| fish.mood = "happy"}
 end
 
-
+def sell_pets
+  self.pets.each {|type, pets| pets.empty? }
+end
 
 def list_pets
  "I have #{pets[:fishes].count} fish, #{pets[:dogs].count} dog(s), and #{pets[:cats].count} cat(s)."
