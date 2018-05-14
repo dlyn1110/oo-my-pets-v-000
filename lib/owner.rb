@@ -54,7 +54,7 @@ end
 
 def sell_pets
   self.pets.each {|type, pets| pets.empty? }
-  
+binding.pry
 end
 
 def list_pets
