@@ -52,11 +52,7 @@ def feed_fish
   self.pets[:fishes].each {|fish| fish.mood = "happy"}
 end
 
-def sell_pets
-   do |type, pets|
-    animals.each do |animal|
-      pets.mood = "nervous"
-      end
+
 
 def list_pets
  "I have #{pets[:fishes].count} fish, #{pets[:dogs].count} dog(s), and #{pets[:cats].count} cat(s).")
