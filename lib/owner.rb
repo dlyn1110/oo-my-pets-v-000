@@ -53,8 +53,12 @@ def feed_fish
 end
 
 def sell_pets
-  self.pets.each {|type, pets| pets.empty? }
-binding.pry
+  pets.each do |species, animals| 
+    animals.each do |animal|
+      animal.mood = "nervous"
+    end
+    animals.clear
+  end  
 end
 
 def list_pets
